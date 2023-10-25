@@ -27,36 +27,35 @@ export default function FooterComponent() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="sobre" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#">Quem somos</Footer.Link>
+                <Footer.Link href="#">Projetos</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Follow us" />
+              <Footer.Title title="Redes sociais" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Github</Footer.Link>
-                <Footer.Link href="#">Discord</Footer.Link>
+                <Footer.Link href="#">Instagram</Footer.Link>
+                <Footer.Link href="#">Facebook</Footer.Link>
+                <Footer.Link href="#">Twitter</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms & Conditions</Footer.Link>
+                <Footer.Link href="#">Termos e Condições</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright by="Flowbite™" href="#" year={2022} />
+          <Footer.Copyright by="Bolota" href="#" year={2023} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
+            <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsTwitter} />
-            <Footer.Icon href="#" icon={BsGithub} />
           </div>
         </div>
       </div>

@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState, useContext } from "react";
 import { Context } from "../page";
-import { Shojumaru } from "next/font/google";
 
 export default function ProductCard({ data }) {
   const notify = () =>
@@ -32,7 +31,7 @@ export default function ProductCard({ data }) {
   };
 
   return (
-    <div className="relative flex flex-col w-full max-w-[48rem] md:flex-row bg-white bg-clip-border text-gray-700">
+    <div className="relative flex flex-col w-full max-w-[48rem] lg:flex-row bg-white bg-clip-border text-gray-700">
       <div className="relative flex justify-center w-5/6 p-4 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
         <img
           src="https://cdn.vnda.com.br/400x/bolovo/2023/09/18/17_42_59_467_17_9_0_096_bolovo_online_0017_blv2062.jpg?v=1695069786"
@@ -41,10 +40,10 @@ export default function ProductCard({ data }) {
         />
       </div>
       <div className="p-6">
-        <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-          Casaco
+        <h4 className="block mb-2  text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          Casaco Top
         </h4>
-        <span className="block mb-2 font-sans  antialiased leading-snug tracking-normal text-blue-gray-900">
+        <span className="block mb-2  antialiased leading-snug tracking-normal text-blue-gray-900">
           R$ 99
         </span>
         <form className="flex flex-col">
@@ -89,8 +88,8 @@ export default function ProductCard({ data }) {
             Descrição
           </span>
           <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
-            Like so many organizations these days, Autodesk is a company in
-            transition.
+            Um casaco moderno e versátil, ideal para os dias frios. Feito de
+            material de alta qualidade.
           </p>
         </div>
       </div>

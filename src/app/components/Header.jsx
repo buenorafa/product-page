@@ -1,8 +1,8 @@
 "use client";
 
 import { Dropdown, Tooltip, Navbar } from "flowbite-react";
-import { Badge } from "flowbite-react";
 import Image from "next/image";
+
 import { useContext } from "react";
 import { Context } from "../page";
 
@@ -12,18 +12,17 @@ export default function Header() {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="#">
-        {/* <img
-          src="/favicon.svg"
-          className="mr-3 h-6 sm:h-9"
+        <img
+          src="/bolota.png"
+          className="mr-3 h-24 "
           alt="Flowbite React Logo"
-        /> */}
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        />
+        {/* <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Lojinha
-        </span>
+        </span> */}
       </Navbar.Brand>
 
       <div className="flex md:order-2 items-center gap-4">
-        {/* Adicionar uma tootip */}
         <Tooltip content="Log-out" placement="bottom">
           <a href="#">
             <Image src="/logout.svg" width={16} height={16} alt="Logout icon" />
@@ -34,7 +33,6 @@ export default function Header() {
           inline
           label={
             <div className="relative">
-              {/* <Badge className="absolute top-3 right-2 h-3 rounded" size="xs" /> */}
               <div
                 className={
                   showNotInHeader > 0
@@ -48,7 +46,7 @@ export default function Header() {
             </div>
           }
         >
-          <Dropdown.Header>
+          {/* <Dropdown.Header>
             <span className="block text-sm">Bonnie Green</span>
             <span className="block truncate text-sm font-medium">
               name@flowbite.com
@@ -58,7 +56,7 @@ export default function Header() {
           <Dropdown.Item>Settings</Dropdown.Item>
           <Dropdown.Item>Earnings</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item>Sign out</Dropdown.Item>
+          <Dropdown.Item>Sign out</Dropdown.Item> */}
         </Dropdown>
         {/* DROP DOWN do carrinho */}
         <Navbar.Toggle />
@@ -67,10 +65,10 @@ export default function Header() {
         <Navbar.Link href="#" active>
           Shop
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Wholesale</Navbar.Link>
-        <Navbar.Link href="#">Terms & Conditions</Navbar.Link>
-        <Navbar.Link href="#">Contact Us</Navbar.Link>
+        <Navbar.Link href="#">Sobre</Navbar.Link>
+        <Navbar.Link href="#">Blog</Navbar.Link>
+        <Navbar.Link href="#">Ajuda</Navbar.Link>
+        <Navbar.Link href="#">Contato</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

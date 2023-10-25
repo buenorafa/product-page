@@ -7,10 +7,10 @@ export default function BreadCComponent() {
   return (
     <Breadcrumb aria-label="Default breadcrumb example">
       <Breadcrumb.Item href="#" icon={HiHome}>
-        <p>Home</p>
+        <p>Shop</p>
       </Breadcrumb.Item>
-      <Breadcrumb.Item href="#">Projects</Breadcrumb.Item>
-      <Breadcrumb.Item>Flowbite React</Breadcrumb.Item>
+      <Breadcrumb.Item href="#">Inverno</Breadcrumb.Item>
+      <Breadcrumb.Item>Casacos</Breadcrumb.Item>
     </Breadcrumb>
   );
 }

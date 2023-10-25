@@ -7,7 +7,7 @@ export default function Newsletter() {
     <form className="flex max-w-md flex-col gap-4">
       <div>
         <div className="mb-2 block">
-          <h2 className="text-3xl">Assine nossa Newsletter</h2>
+          <h2 className="text-3xl">Newsletter</h2>
           <Label htmlFor="email2" value="Seu e-mail" />
         </div>
         <TextInput
@@ -22,12 +22,15 @@ export default function Newsletter() {
         <Checkbox id="agree" />
         <Label className="flex" htmlFor="agree">
           <p>
-            Eu concordo com os <b>termos e condições</b>
+            Eu concordo com os{" "}
+            <a href="#">
+              <b>termos e condições</b>
+            </a>
           </p>
         </Label>
       </div>
       <Button color="dark" outline>
-        Assinar!
+        Assinar
       </Button>
     </form>
   );
