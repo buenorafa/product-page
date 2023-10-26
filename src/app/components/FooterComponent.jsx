@@ -13,7 +13,7 @@ import Newsletter from "./Newsletter";
 
 export default function FooterComponent() {
   return (
-    <Footer container>
+    <Footer className="bg-gray-200	" container>
       <div className="w-full">
         <div className="grid w-full justify-around sm:flex sm:justify-around md:flex md:grid-cols-1 pl-7 gap-4">
           <div>

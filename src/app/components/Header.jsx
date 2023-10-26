@@ -10,7 +10,7 @@ export default function Header() {
   const [showNotInHeader, setShowNotInHeader] = useContext(Context);
 
   return (
-    <Navbar fluid rounded>
+    <Navbar className="" fluid rounded>
       <Navbar.Brand href="#">
         <img
           src="/bolota.png"
